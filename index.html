@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotes</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <input type="text" placeholder="Filter text" id="search" disabled />
+    <button class="search-button" id="search-button" onclick="setData()">Random</button>
+    <div class="filter-wrapper">
+        <input type="checkbox" id="enable-search" onchange="handleToggleFilter()" />
+        <label for="enable-search">&nbsp;Enable Filter</label>
+    </div>    
+    <div class="card">
+        <img id="random-image" alt="Image" />
+        <br />
+        <p id="random-quote"></p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
